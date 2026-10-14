@@ -19,13 +19,9 @@ def profil():
                            favorittspråk = "Norsk",
                            skole = "Kuben")
 
-@app.route("/prosjekter")
-def prosjekter():
-    return "Prosjekter"
-
-@app.route("/kontakt")
-def kontakt():
-    return "Kontakt Oss"
+@app.route("/poeng")
+def poeng():
+    return render_template("poeng.html", poeng = 10)
 
 
 if __name__ == "__main__":
